@@ -7,12 +7,13 @@ Documentation     A resource file with reusable keywords and variables.
 Library           Selenium2Library
 
 *** Variables ***
-${SERVER}         localhost:7272
+#${SERVER}         localhost:8000
+${SERVER}         localhost/explore_robot/webdemo/demoapp/html/index.html
 ${BROWSER}        Firefox
 ${DELAY}          0
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
-${LOGIN URL}      http://${SERVER}/
+${LOGIN URL}      http://${SERVER}
 ${WELCOME URL}    http://${SERVER}/welcome.html
 ${ERROR URL}      http://${SERVER}/error.html
 
